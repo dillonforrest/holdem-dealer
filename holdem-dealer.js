@@ -1,0 +1,11 @@
+goog.addDependency("base.js", ['goog'], []);
+goog.addDependency("../cljs/core.js", ['cljs.core'], ['goog.string', 'goog.object', 'goog.string.StringBuffer', 'goog.array']);
+goog.addDependency("../ckfiY.js", ['cljs.nodejs'], ['cljs.core']);
+goog.addDependency("../clojure/set.js", ['clojure.set'], ['cljs.core']);
+goog.addDependency("../quile/dependency.js", ['quile.dependency'], ['cljs.core', 'clojure.set']);
+goog.addDependency("../quile/component.js", ['quile.component'], ['quile.dependency', 'cljs.core']);
+goog.addDependency("../holdem_dealer/log.js", ['holdem_dealer.log'], ['cljs.core', 'cljs.nodejs']);
+goog.addDependency("../holdem_dealer/web.js", ['holdem_dealer.web'], ['cljs.core', 'cljs.nodejs', 'quile.component', 'holdem_dealer.log']);
+goog.addDependency("../holdem_dealer/config.js", ['holdem_dealer.config'], ['cljs.core', 'cljs.nodejs', 'quile.component', 'holdem_dealer.log']);
+goog.addDependency("../holdem_dealer/core.js", ['holdem_dealer.core'], ['cljs.core', 'holdem_dealer.web', 'cljs.nodejs', 'quile.component', 'holdem_dealer.log', 'holdem_dealer.config']);
+goog.addDependency("../OLNUS.js", ['cljs.nodejscli'], ['cljs.core', 'cljs.nodejs', 'cljs.nodejs']);
